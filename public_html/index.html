@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SwingGift.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+        <!-- jQueryMobileCSS - original without styling -->
+        <link rel="stylesheet" href="css/jquerymobile.css" />
+
+        <!-- nativeDroid core CSS -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+
+        <!-- nativeDroid: Light/Dark -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+
+        <!-- nativeDroid: Color Schemes -->
+        <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.red.css" id='jQMnDColor' />
+
+        <!-- mycss: extra css file -->
+        <link rel="stylesheet" href="css/mycss.css" />
+
+
+        <!-- jQuery / jQueryMobile Scripts -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.1.min.js"></script>
+
+        <!-- Intro screen fade -->
+        <script src="js/introscreen.js"></script>
+
+        <script src="js/jquery.countdown.js"></script>
+        <script>
+            $('#clock').countdown('2014/04/05', function(event) {
+                $(this).html(event.strftime('%D days %H:%M:%S'));
+            });
+        </script>
+
+        <script src="js/jquery.hashchange.js" type="text/javascript"></script>
+        <script src="js/jquery.easytabs.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+
+        <div data-role="page" data-theme="b" id="intro"> 
+            <div>
+
+            </div>
+        </div>
+
+        <!-- Index page -->
+        <div data-role="page" data-theme='b' id="index" class="background">
+
+            <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
+                <img src="img/footer.png" alt="footer">
+            </div>
+
+            <div data-role="content" >   
+                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
+                    <li data-role="list-divider">
+                        INDIAN CAMP FESTIVAL: A BRAND NEW FESTIVAL CONCEPT IN BRUGES!
+
+                    </li>                   
+                </ul>
+            </div>
+            <div class="wrap">
+
+                <!-- Define all of the tiles: -->
+                <div class="box">
+                    <div class="boxInner">
+                        <a href="#line-up"><img src="img/LINE UP.png" alt="Line-up" /></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxInner">
+                        <a href="#map"><img src="img/MAP.png" alt="Map" /></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxInner">
+                        <a href="#social"><img src="img/SOCIAL.png" alt="social" /></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="boxInner">
+                        <a href="#extra"><img src="img/INFO.png" alt="extra" /></a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'>
+                <div id="clock">Probeer hier een countdown timer te zetten</div>
+            </div>
+        </div>
+
+        <!-- Map page -->
+        <div data-role="page" data-theme='b' id="map" class="background">
+
+            <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
+                <img src="img/footer.png" alt="footer">
+            </div>
+
+            <div data-role="content" >   
+                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
+                    <li data-role="list-divider">                          
+                        <img src="img/Indian Camp Plan.png" alt="plan" class="map">
+                    </li>
+                </ul>
+            </div>
+
+            <div data-role="popup" id="popupDialog" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" >
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <img src="img/legende plan indian camp.png" alt="legend">
+            </div>
+
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'  data-hide-during-focus="true">
+                <a href="#" data-rel="back" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+                <a href="#popupDialog" data-rel='popup' data-position-to='window' data-role='button' data-icon='external-link' data-transition='fade' data-mini="true" data-inline='true' style="float: right;" >Legend</a>
+
+            </div>
+        </div>
+
+        <!-- Social page -->
+        <div data-role="page" data-theme='b' id="social" class="background">
+
+            <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
+                <img src="img/footer.png" alt="footer">
+            </div>
+
+            <div data-role="content" >   
+                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
+                    <li data-role="list-divider">
+                        <a href="#" data-rel="back" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+                    </li>                   
+                </ul>
+                <div class="wrap">
+
+                    <!-- Define all of the tiles: -->
+                    <div class="box">
+                        <div class="boxInner">
+                            <a href="#line-up"><img src="img/FB.png" alt="Line-up" /></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxInner">
+                            <a href="#map"><img src="img/LinkedIn.png" alt="Map" /></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxInner">
+                            <a href="#social"><img src="img/twitter.png" alt="social" /></a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxInner">
+                            <a href="#extra"><img src="img/facebook.png" alt="extra" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extra page -->
+        <div data-role="page" data-theme='b' id="extra" class="background">
+
+            <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
+                <img src="img/footer.png" alt="footer">
+            </div>
+
+            <div data-role="content" >   
+                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
+                    <li data-role="list-divider">
+                        <a href="#" data-rel="back" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+                    </li>
+                    <li>
+                        <div data-role='collapsible' data-content-theme='b'>
+                            <h4>About</h4>
+                            <div>Any content</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-role='collapsible' data-content-theme='b'>
+                            <h4>News</h4>
+                            <div>Any content</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-role='collapsible' data-content-theme='b'>
+                            <h4>Tickets</h4>
+                            <div>Any content</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-role='collapsible' data-content-theme='b'>
+                            <h4>How to get there?</h4>
+                            <div>Any content</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-role='collapsible' data-content-theme='b'>
+                            <h4>Partners</h4>
+                            <div>Any content</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Line-up page main stage -->
+        <div data-role="page" data-theme='b' id="line-up" class="background">
+
+            <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
+                <img src="img/footer.png" alt="footer">
+            </div>
+
+
+            <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
+                    <li data-role="list-divider">
+                        <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+                        <hr/>
+                        <div data-role="controlgroup"  data-type="horizontal">
+                            <a href="#line-up" data-role="button">Main</a>
+                            <a href="#line-up2" data-role="button">Melody</a>
+                            <a href="#line-up3" data-role="button">DnB</a>
+                        </div>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Main stage DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Main stage DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Main stage DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Main stage DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Main stage DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Main stage DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Main stage DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Line-up page melody stage -->
+        <div data-role="page" data-theme='b' id="line-up2" class="background">
+
+            <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
+                <img src="img/footer.png" alt="footer">
+            </div>
+
+
+            <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
+                    <li data-role="list-divider">
+                        <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+                        <hr/>
+                        <div data-role="controlgroup"  data-type="horizontal">
+                            <a href="#line-up" data-role="button">Main</a>
+                            <a href="#line-up2" data-role="button">Melody</a>
+                            <a href="#line-up3" data-role="button">DnB</a>
+                        </div>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Melody DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Melody DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Melody DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Melody DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Melody DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Melody DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>Melody DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Line-up page dnb stage -->
+        <div data-role="page" data-theme='b' id="line-up3" class="background">
+
+            <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
+                <img src="img/footer.png" alt="footer">
+            </div>
+
+
+            <div data-role="content">
+                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
+                    <li data-role="list-divider">
+                        <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+                        <hr/>
+                        <div data-role="controlgroup"  data-type="horizontal">
+                            <a href="#line-up" data-role="button">Main</a>
+                            <a href="#line-up2" data-role="button">Melody</a>
+                            <a href="#line-up3" data-role="button">DnB</a>
+                        </div>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>DnB DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>DnB DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>DnB DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>DnB DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>DnB DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>DnB DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="index.php">
+                            <img src="http://www.placehold.it/150x150" alt="test">
+                            <h2>DnB DJ</h2>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>

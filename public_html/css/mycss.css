@@ -1,0 +1,111 @@
+#intro {
+    background-image: url(../img/website_header_01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.background  {
+    background-image: url(../img/poster_enkelachtergrond_01.jpg);
+
+}
+
+.footer img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.wrap {
+    overflow: hidden;
+    margin: 10px;
+}
+.box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+}
+.boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+}
+.boxInner img {
+    width: 100%;
+}
+
+.map {
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+}
+
+
+@media only screen and (max-width : 480px) {
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+
+    .map {
+        max-width: 100%;
+        max-height: 75%;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        overflow: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    /* Medium desktop: 4 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+
+.etabs { margin: 0; padding: 0; }
+.tab { display: inline-block; zoom:1; *display:inline; background: #eee; border: solid 1px #999; border-bottom: none; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; }
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; }
+.tab a:hover { text-decoration: underline; }
+.tab.active { background: #fff; padding-top: 6px; position: relative; top: 1px; border-color: #666; }
+.tab a.active { font-weight: bold; }
+.tab-container .panel-container { background: #fff; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }

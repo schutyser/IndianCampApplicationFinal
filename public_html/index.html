@@ -26,31 +26,11 @@
         <!-- jQuery / jQueryMobile Scripts -->
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/jquery.mobile-1.3.1.min.js"></script>
-
-        <!-- Intro screen fade -->
-        <script src="js/introscreen.js"></script>
         
         <!-- Twitter -->
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-        <script src="js/jquery.countdown.js"></script>
-        <script>
-            $('#clock').countdown('2014/04/05', function(event) {
-                $(this).html(event.strftime('%D days %H:%M:%S'));
-            });
-        </script>
-
-        <script src="js/jquery.hashchange.js" type="text/javascript"></script>
-        <script src="js/jquery.easytabs.js" type="text/javascript"></script>
-
     </head>
     <body>
-
-        <div data-role="page" data-theme="b" id="intro"> 
-            <div>
-
-            </div>
-        </div>
 
         <!-- Index page -->
         <div data-role="page" data-theme='b' id="index" class="background">
@@ -61,8 +41,8 @@
 
             <div data-role="content" >   
                 <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
-                    <li data-role="list-divider">
-                        INDIAN CAMP FESTIVAL: A BRAND NEW FESTIVAL CONCEPT IN BRUGES!
+                    <li data-role="list-divider" style="text-align: center">
+                        A BRAND NEW FESTIVAL IN BRUGES!
 
                     </li>                   
                 </ul>
@@ -93,12 +73,12 @@
             </div>
 
             <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'>
-                <div id="clock">Probeer hier een countdown timer te zetten</div>
+                <p style="text-align: center">&#169; Indian Camp Festival</p>
             </div>
         </div>
 
         <!-- Map page -->
-        <div data-role="page" data-theme='b' id="map" class="background">
+        <div data-role="page" data-theme='b' id="map">
 
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
@@ -107,14 +87,14 @@
             <div data-role="content" >   
                 <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
                     <li data-role="list-divider">                          
-                        <img src="img/Indian Camp Plan.png" alt="plan" class="map">
+                        <img src="img/kaart_muze_01.jpg" alt="plan" class="map">
                     </li>
                 </ul>
             </div>
 
             <div data-role="popup" id="popupDialog" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" >
                 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-                <img src="img/legende plan indian camp.png" alt="legend">
+                <img src="img/legende_muze.jpg" alt="legend">
             </div>
 
             <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'  data-hide-during-focus="true">
@@ -125,7 +105,7 @@
         </div>
 
         <!-- Social page -->
-        <div data-role="page" data-theme='b' id="social" class="background">
+        <div data-role="page" data-theme='b' id="social">
 
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
@@ -142,23 +122,23 @@
                     <!-- Define all of the tiles: -->
                     <div class="box">
                         <div class="boxInner">
-                            <a href="http://m.facebook.com/sharer.php?u=www.facebook.com/events/399863813492552/"><img src="img/facebook.png" alt="Facebook" /></a>
+                            <a href="http://m.facebook.com/sharer.php?u=www.facebook.com/events/399863813492552/"><img src="img/Social media icons/facebook.png" alt="Facebook" /></a>
                             
                         </div>
                     </div>
                     <div class="box">
                         <div class="boxInner">
-                            <a href="https://foursquare.com/mobile/checkin?vid=#4e7287ded1648a7beca03e9b#"><img src="img/foursquare-4096-black.png" alt="foursquare" /></a>
+                            <a href="https://foursquare.com/mobile/checkin?vid=#4e7287ded1648a7beca03e9b#"><img src="img/Social media icons/foursquare.png" alt="foursquare" /></a>
                         </div>
                     </div>
                     <div class="box">
                         <div class="boxInner">
-                            <a href="https://twitter.com/intent/tweet?button_hashtag=icf14&text=I'm%20going%20to%20Indian%20Camp%20festival!%20Join%20me%3F%20@IndianCampBE"><img src="img/twitter.png" alt="twitter" /></a>
+                            <a href="https://twitter.com/intent/tweet?button_hashtag=icf14&text=I'm%20going%20to%20Indian%20Camp%20festival!%20Join%20me%3F%20@IndianCampBE"><img src="img/Social media icons/twitter_bird.png" alt="twitter" /></a>
                         </div>
                     </div>
                     <div class="box">
                         <div class="boxInner">
-                            <a href="http://instagram.com/schutyser"><img src="img/instagram.gif" alt="instagram" /></a>
+                            <a href="http://instagram.com/schutyser"><img src="img/Social media icons/photobucket.png" alt="instagram" /></a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +146,7 @@
         </div>
 
         <!-- Extra page -->
-        <div data-role="page" data-theme='b' id="extra" class="background">
+        <div data-role="page" data-theme='b' id="extra">
 
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
@@ -212,7 +192,7 @@
         </div>
 
         <!-- Line-up page main stage -->
-        <div data-role="page" data-theme='b' id="line-up" class="background">
+        <div data-role="page" data-theme='b' id="line-up">
 
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
@@ -225,58 +205,58 @@
                         <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
                         <hr/>
                         <div data-role="controlgroup"  data-type="horizontal">
-                            <a href="#line-up" data-role="button">Main</a>
-                            <a href="#line-up2" data-role="button">Melody</a>
-                            <a href="#line-up3" data-role="button">DnB</a>
+                            <a href="#line-up" data-role="button" data-transition="none">Main</a>
+                            <a href="#line-up2" data-role="button" data-transition="none">Melody</a>
+                            <a href="#line-up3" data-role="button" data-transition="none">DnB</a>
                         </div>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Main stage DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/main/2092_50433031853_6441_n.jpg" alt="Barabas">
+                            <h2>Barabas</h2>
+                            <p class="ui-li-aside"><strong>15:00</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Main stage DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/main/5486_504700749593540_1533546173_n.jpg" alt="Calling Susan">
+                            <h2>Calling Susan</h2>
+                            <p class="ui-li-aside"><strong>16:30</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Main stage DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/main/603735_513091405410909_609505951_n.jpg" alt="Alpha Whale">
+                            <h2>Alpha Whale</h2>
+                            <p class="ui-li-aside"><strong>18:00</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Main stage DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/main/734145_525381860815818_1402778971_n.jpg" alt="test">
+                            <h2>Soviet Grass</h2>
+                            <p class="ui-li-aside"><strong>19:30</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Main stage DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/main/292493_10151647495758586_1383308931_n.jpg" alt="test">
+                            <h2>Buscemi</h2>
+                            <p class="ui-li-aside"><strong>21:00</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Main stage DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/main/1381633_10151620527486946_655551680_n.jpg" alt="test">
+                            <h2>De Feesters (Live)</h2>
+                            <p class="ui-li-aside"><strong>22:30</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Main stage DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/main/1375165_10151785513903533_614261626_n.jpg" alt="test">
+                            <h2>David Latour</h2>
+                            <p class="ui-li-aside"><strong>23:30</strong></p>
                         </a>
                     </li>
                 </ul>
@@ -285,7 +265,7 @@
         </div>
 
         <!-- Line-up page melody stage -->
-        <div data-role="page" data-theme='b' id="line-up2" class="background">
+        <div data-role="page" data-theme='b' id="line-up2">
 
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
@@ -298,58 +278,65 @@
                         <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
                         <hr/>
                         <div data-role="controlgroup"  data-type="horizontal">
-                            <a href="#line-up" data-role="button">Main</a>
-                            <a href="#line-up2" data-role="button">Melody</a>
-                            <a href="#line-up3" data-role="button">DnB</a>
+                            <a href="#line-up" data-role="button" data-transition="none">Main</a>
+                            <a href="#line-up2" data-role="button" data-transition="none">Melody</a>
+                            <a href="#line-up3" data-role="button" data-transition="none">DnB</a>
                         </div>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Melody DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/facebook_profilepic.png" alt="test">
+                            <h2>DJ contest winner: DJ Jaggid</h2>
+                            <p class="ui-li-aside"><strong>17:00</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Melody DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/bar/970167_261083114036468_2079186500_n.jpg" alt="test">
+                            <h2>Jetlag</h2>
+                            <p class="ui-li-aside"><strong>18:00</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Melody DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/main/1381633_10151620527486946_655551680_n.jpg" alt="test">
+                            <h2>De Feesters (DJ set)</h2>
+                            <p class="ui-li-aside"><strong>20:00</strong></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php">
+                            <img src="img/Foto's artiesten/bar/529101_10151376237632293_398791631_n.jpg" alt="test">
+                            <h2>Draz & Bazz</h2>
+                            <p class="ui-li-aside"><strong>21:30</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Melody DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/bar/537755_511596612213092_1905321828_n.jpg" alt="test">
+                            <h2>DJ Lexi</h2>
+                            <p class="ui-li-aside"><strong>23:00</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Melody DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/bar/575783_244656965697900_2013622952_n.jpg" alt="test">
+                            <h2>Deliciaz</h2>
+                            <p class="ui-li-aside"><strong>01:00</strong></p>
+                        </a>
+                    </li>
+                      <li >
+                        <a href="index.php">
+                            <img src="img/Foto's artiesten/bar/1459347_10151698962572064_1934943362_n.jpg" alt="test">
+                            <h2>DJulia</h2>
+                            <p class="ui-li-aside"><strong>03:00</strong></p>
                         </a>
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Melody DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>Melody DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/bar/423806_10150648940603984_1901081155_n.jpg" alt="test">
+                            <h2>Jacky D</h2>
+                            <p class="ui-li-aside"><strong>04:30</strong></p>
                         </a>
                     </li>
                 </ul>
@@ -358,7 +345,7 @@
         </div>
 
         <!-- Line-up page dnb stage -->
-        <div data-role="page" data-theme='b' id="line-up3" class="background">
+        <div data-role="page" data-theme='b' id="line-up3">
 
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
@@ -371,58 +358,86 @@
                         <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
                         <hr/>
                         <div data-role="controlgroup"  data-type="horizontal">
-                            <a href="#line-up" data-role="button">Main</a>
-                            <a href="#line-up2" data-role="button">Melody</a>
-                            <a href="#line-up3" data-role="button">DnB</a>
+                            <a href="#line-up" data-role="button" data-transition="none">Main</a>
+                            <a href="#line-up2" data-role="button" data-transition="none">Melody</a>
+                            <a href="#line-up3" data-role="button" data-transition="none">DnB</a>
                         </div>
                     </li>
-                    <li >
+                    <li>
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>DnB DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/dnb/469850_443024245723548_546598789_o.jpg" alt="test">
+                            <h2>D'High</h2>
+                            <p class="ui-li-aside"><strong>16:00</strong></p>
                         </a>
                     </li>
-                    <li >
+                    <li>
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>DnB DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/dnb/528357_10151512982027768_1443058176_n.jpg" alt="test">
+                            <h2>Fugit</h2>
+                            <p class="ui-li-aside"><strong>16:45</strong></p>
                         </a>
                     </li>
-                    <li >
+                    <li>
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>DnB DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/dnb/469850_443024245723548_546598789_o.jpg" alt="test">
+                            <h2>Energetics</h2>
+                            <p class="ui-li-aside"><strong>17:30</strong></p>
                         </a>
                     </li>
-                    <li >
+                    <li>
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>DnB DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/dnb/1479463_10151744940891954_1593467815_n.jpg" alt="test">
+                            <h2>Citadel</h2>
+                            <p class="ui-li-aside"><strong>18:30</strong></p>
                         </a>
                     </li>
-                    <li >
+                    <li>
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>DnB DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/dnb/1479463_10151744940891954_1593467815_n.jpg" alt="test">
+                            <h2>Day One</h2>
+                            <p class="ui-li-aside"><strong>19:30</strong></p>
                         </a>
                     </li>
-                    <li >
+                    <li>
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>DnB DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/dnb/1264707_561973337202631_1539546071_o.jpg" alt="test">
+                            <h2>Submatik</h2>
+                            <p class="ui-li-aside"><strong>20:30</strong></p>
                         </a>
                     </li>
-                    <li >
+                    <li>
                         <a href="index.php">
-                            <img src="http://www.placehold.it/150x150" alt="test">
-                            <h2>DnB DJ</h2>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                            <img src="img/Foto's artiesten/dnb/562409_321773384555736_1619934776_n.jpg" alt="test">
+                            <h2>Twothirds</h2>
+                            <p class="ui-li-aside"><strong>21:30</strong></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php">
+                            <img src="img/Foto's artiesten/dnb/1385994_652016558156428_1139962333_n.jpg" alt="test">
+                            <h2>Fox Stevenson</h2>
+                            <p class="ui-li-aside"><strong>22:30</strong></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php">
+                            <img src="img/Foto's artiesten/dnb/1263048_608627059159733_1279556801_o.jpg" alt="test">
+                            <h2>Feint</h2>
+                            <p class="ui-li-aside"><strong>23:30</strong></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php">
+                            <img src="img/Foto's artiesten/dnb/smooth.jpg" alt="test">
+                            <h2>Smooth</h2>
+                            <p class="ui-li-aside"><strong>01:30</strong></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.php">
+                            <img src="img/Foto's artiesten/dnb/20867_456361673265_3975113_n.jpg" alt="test">
+                            <h2>Slowe Slage</h2>
+                            <p class="ui-li-aside"><strong>03:00</strong></p>
                         </a>
                     </li>
                 </ul>

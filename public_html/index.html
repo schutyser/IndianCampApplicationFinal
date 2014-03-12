@@ -26,9 +26,17 @@
         <!-- jQuery / jQueryMobile Scripts -->
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/jquery.mobile-1.3.1.min.js"></script>
-        
+
         <!-- Twitter -->
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <script>!function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + '://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, 'script', 'twitter-wjs');</script>
     </head>
     <body>
 
@@ -110,38 +118,39 @@
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
             </div>
-
+            <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
+                <li data-role="list-divider" style="text-align: center">
+                    Get social on our Facebook, Foursquare, twitter and instagram #ICF14
+                </li>                   
+            </ul>
             <div data-role="content" >   
-                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
-                    <li data-role="list-divider">
-                        <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
-                    </li>                   
-                </ul>
                 <div class="wrap">
-
                     <!-- Define all of the tiles: -->
                     <div class="box">
                         <div class="boxInner">
                             <a href="http://m.facebook.com/sharer.php?u=www.facebook.com/events/399863813492552/"><img src="img/Social media icons/facebook.png" alt="Facebook" /></a>
-                            
+
                         </div>
                     </div>
                     <div class="box">
                         <div class="boxInner">
-                            <a href="https://foursquare.com/mobile/checkin?vid=#4e7287ded1648a7beca03e9b#"><img src="img/Social media icons/foursquare.png" alt="foursquare" /></a>
+                            <a href="https://foursquare.com/mobile/checkin?vid=#4e7287ded1648a7beca03e9b#"><img src="img/Social media icons/foursuare.png" alt="foursquare" /></a>
                         </div>
                     </div>
                     <div class="box">
                         <div class="boxInner">
-                            <a href="https://twitter.com/intent/tweet?button_hashtag=icf14&text=I'm%20going%20to%20Indian%20Camp%20festival!%20Join%20me%3F%20@IndianCampBE"><img src="img/Social media icons/twitter_bird.png" alt="twitter" /></a>
+                            <a href="https://twitter.com/intent/tweet?button_hashtag=icf14&text=I'm%20going%20to%20Indian%20Camp%20festival!%20Join%20me%3F%20@IndianCampBE"><img src="img/Social media icons/twitter.png" alt="twitter" /></a>
                         </div>
                     </div>
                     <div class="box">
                         <div class="boxInner">
-                            <a href="http://instagram.com/schutyser"><img src="img/Social media icons/photobucket.png" alt="instagram" /></a>
+                            <a href="http://instagram.com/schutyser"><img src="img/Social media icons/instagram.png" alt="instagram" /></a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'  data-hide-during-focus="true">
+                <a href="#" data-rel="back" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
             </div>
         </div>
 
@@ -154,9 +163,6 @@
 
             <div data-role="content" >   
                 <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
-                    <li data-role="list-divider">
-                        <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
-                    </li>
                     <li>
                         <div data-role='collapsible' data-content-theme='b'>
                             <h4>About</h4>
@@ -189,6 +195,9 @@
                     </li>
                 </ul>
             </div>
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'  data-hide-during-focus="true">
+                <a href="#" data-rel="back" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+            </div>
         </div>
 
         <!-- Line-up page main stage -->
@@ -202,8 +211,6 @@
             <div data-role="content">
                 <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
                     <li data-role="list-divider">
-                        <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
-                        <hr/>
                         <div data-role="controlgroup"  data-type="horizontal">
                             <a href="#line-up" data-role="button" data-transition="none">Main</a>
                             <a href="#line-up2" data-role="button" data-transition="none">Melody</a>
@@ -261,7 +268,9 @@
                     </li>
                 </ul>
             </div>
-
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'  data-hide-during-focus="true">
+                <a href="#" data-rel="back" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+            </div>
         </div>
 
         <!-- Line-up page melody stage -->
@@ -270,13 +279,9 @@
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
             </div>
-
-
             <div data-role="content">
                 <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
                     <li data-role="list-divider">
-                        <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
-                        <hr/>
                         <div data-role="controlgroup"  data-type="horizontal">
                             <a href="#line-up" data-role="button" data-transition="none">Main</a>
                             <a href="#line-up2" data-role="button" data-transition="none">Melody</a>
@@ -285,7 +290,7 @@
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="img/facebook_profilepic.png" alt="test">
+                            <img src="img/Foto's artiesten/bar/1274897_1428720587353832_43815783_o.jpg" alt="test">
                             <h2>DJ contest winner: DJ Jaggid</h2>
                             <p class="ui-li-aside"><strong>17:00</strong></p>
                         </a>
@@ -313,8 +318,8 @@
                     </li>
                     <li >
                         <a href="index.php">
-                            <img src="img/Foto's artiesten/bar/537755_511596612213092_1905321828_n.jpg" alt="test">
-                            <h2>DJ Lexi</h2>
+                            <img src="img/Foto's artiesten/bar/906720_617269141644836_722147053_o.jpg" alt="test">
+                            <h2>Boyscout Radio</h2>
                             <p class="ui-li-aside"><strong>23:00</strong></p>
                         </a>
                     </li>
@@ -325,7 +330,7 @@
                             <p class="ui-li-aside"><strong>01:00</strong></p>
                         </a>
                     </li>
-                      <li >
+                    <li >
                         <a href="index.php">
                             <img src="img/Foto's artiesten/bar/1459347_10151698962572064_1934943362_n.jpg" alt="test">
                             <h2>DJulia</h2>
@@ -341,7 +346,9 @@
                     </li>
                 </ul>
             </div>
-
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'  data-hide-during-focus="true">
+                <a href="#" data-rel="back" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+            </div>
         </div>
 
         <!-- Line-up page dnb stage -->
@@ -350,13 +357,9 @@
             <div data-role="header" data-position="fixed" data-theme='b' data-tap-toggle="false" class="footer">
                 <img src="img/footer.png" alt="footer">
             </div>
-
-
             <div data-role="content">
                 <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
                     <li data-role="list-divider">
-                        <a href="#index" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
-                        <hr/>
                         <div data-role="controlgroup"  data-type="horizontal">
                             <a href="#line-up" data-role="button" data-transition="none">Main</a>
                             <a href="#line-up2" data-role="button" data-transition="none">Melody</a>
@@ -365,8 +368,8 @@
                     </li>
                     <li>
                         <a href="index.php">
-                            <img src="img/Foto's artiesten/dnb/469850_443024245723548_546598789_o.jpg" alt="test">
-                            <h2>D'High</h2>
+                            <img src="img/Foto's artiesten/dnb/884919_10202156415894130_557753807_o.jpg" alt="test">
+                            <h2>DJ contest winner: D'High</h2>
                             <p class="ui-li-aside"><strong>16:00</strong></p>
                         </a>
                     </li>
@@ -381,68 +384,70 @@
                         <a href="index.php">
                             <img src="img/Foto's artiesten/dnb/469850_443024245723548_546598789_o.jpg" alt="test">
                             <h2>Energetics</h2>
-                            <p class="ui-li-aside"><strong>17:30</strong></p>
+                            <p class="ui-li-aside"><strong>17:30</strong><br/><small>Hosted by <br/>MC Kryptic</small></p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php">
                             <img src="img/Foto's artiesten/dnb/1479463_10151744940891954_1593467815_n.jpg" alt="test">
                             <h2>Citadel</h2>
-                            <p class="ui-li-aside"><strong>18:30</strong></p>
+                            <p class="ui-li-aside"><strong>18:30</strong><br/><small>Hosted by <br/>MC Klinke</small></p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php">
-                            <img src="img/Foto's artiesten/dnb/1479463_10151744940891954_1593467815_n.jpg" alt="test">
+                            <img src="img/Foto's artiesten/dnb/dayone.png" alt="test">
                             <h2>Day One</h2>
-                            <p class="ui-li-aside"><strong>19:30</strong></p>
+                            <p class="ui-li-aside"><strong>19:30</strong><br/><small>Hosted by <br/>MC Kryptic</small></p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php">
                             <img src="img/Foto's artiesten/dnb/1264707_561973337202631_1539546071_o.jpg" alt="test">
                             <h2>Submatik</h2>
-                            <p class="ui-li-aside"><strong>20:30</strong></p>
+                            <p class="ui-li-aside"><strong>20:30</strong><br/><small>Hosted by <br/>MC Kryptic</small></p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php">
                             <img src="img/Foto's artiesten/dnb/562409_321773384555736_1619934776_n.jpg" alt="test">
                             <h2>Twothirds</h2>
-                            <p class="ui-li-aside"><strong>21:30</strong></p>
+                            <p class="ui-li-aside"><strong>21:30</strong><br/><small>Hosted by <br/>MC Kryptic</small></p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php">
                             <img src="img/Foto's artiesten/dnb/1385994_652016558156428_1139962333_n.jpg" alt="test">
                             <h2>Fox Stevenson</h2>
-                            <p class="ui-li-aside"><strong>22:30</strong></p>
+                            <p class="ui-li-aside"><strong>22:30</strong><br/><small>Hosted by <br/>MC Mota</small></p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php">
                             <img src="img/Foto's artiesten/dnb/1263048_608627059159733_1279556801_o.jpg" alt="test">
                             <h2>Feint</h2>
-                            <p class="ui-li-aside"><strong>23:30</strong></p>
+                            <p class="ui-li-aside"><strong>23:30</strong><br/><small>Hosted by <br/>MC Mota</small></p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php">
                             <img src="img/Foto's artiesten/dnb/smooth.jpg" alt="test">
                             <h2>Smooth</h2>
-                            <p class="ui-li-aside"><strong>01:30</strong></p>
+                            <p class="ui-li-aside"><strong>01:30</strong><br/><small>Hosted by <br/>MC Mota</small></p>
                         </a>
                     </li>
                     <li>
                         <a href="index.php">
                             <img src="img/Foto's artiesten/dnb/20867_456361673265_3975113_n.jpg" alt="test">
                             <h2>Slowe Slage</h2>
-                            <p class="ui-li-aside"><strong>03:00</strong></p>
+                            <p class="ui-li-aside"><strong>03:00</strong><br/><small>Hosted by <br/>MC Mota</small></p>
                         </a>
                     </li>
                 </ul>
             </div>
-
+            <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme='b'  data-hide-during-focus="true">
+                <a href="#" data-rel="back" data-icon="mail-reply" data-role="button" data-inline="true" data-mini="true" >Go back</a>
+            </div>
         </div>
     </body>
 </html>

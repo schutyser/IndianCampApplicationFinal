@@ -95,9 +95,14 @@
             <div data-role="content" >   
                 <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b"> 
                     <li data-role="list-divider">                          
-                        <img src="img/kaart_muze_01.jpg" alt="plan" class="map">
+                        <a href="#popupDialog2" data-rel='popup' data-position-to='window' data-transition='fade'><img id="clickbutton" src="img/kaart_muze_01.jpg"  alt="plan" class="map"></a>
                     </li>
                 </ul>
+            </div>
+            
+            <div data-role="popup" id="popupDialog2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" >
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <img src="img/kaart_muze_01.jpg" alt="legend">
             </div>
 
             <div data-role="popup" id="popupDialog" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" >

@@ -29,8 +29,8 @@
 }
 
 .map {
-    max-width: 100%;
-    max-height: 80%;
+    width: 80%;
+    height: 80%;
     bottom: 0;
     left: 0;
     margin: auto;
@@ -38,7 +38,6 @@
     position: fixed;
     right: 0;
     top: 0;
-
 }
 
 
